@@ -1,82 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html class="bg-dark">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./CSS/estilo.css">
-    <script src="./JavaScript/script.js"></script>
     <title>Expo GitHub</title>
 </head>
 
 <body>
 
     <header>
-        <div class="class1">
-            <h1>GIT HUB</h1>
-            <h2>Control de Versiones</h2>
-            <h4>Felix Alfaro & Sebastián Muñoz</h4>
-        </div>
-        <div class="class2"><img src="./Imagenes/1.png" alt="GitHub" id="imagen"></div>
-    </header>
-    <section>
-        <!-- <img src="./Imagenes/fondo.PNG" alt="fondo"> -->
-        <div class="tab" style="display:block">
-            <button class="tablinks" onclick="Opentab(event, 'Que_es')">¿Qué es?</button>
-            <button class="tablinks" onclick="Opentab(event, 'Que_es_Git')">¿Qué es Git?</button>
-            <button class="tablinks" onclick="Opentab(event, 'HUB')">HUB</button>
-            <button class="tablinks" onclick="Opentab(event, 'Git_hub')">Git Hub</button>
-            <button class="tablinks" onclick="Opentab(event, 'Sirve')">¿Para qué sirve?</button>
-            <button class="tablinks" onclick="Opentab(event, 'Repositorios')">Repositorios GitHub</button>
+        <div class="row justify-content-center">
+            <div class="col bg-warning">
+            </div>
+            <div class="col text-dark bg-warning text-center pt-5">
+                <h1>GIT HUB</h1>
+                <h2>Control de Versiones</h2>
+                <h4>Felix Alfaro & Sebastián Muñoz</h4>
+            </div>
+            <div class="col bg-warning pt-4 pb-4">
+                <div><img src="./Imagenes/1.png" alt="GitHub" id="imagen" class="img-rounded" height="40%" width="40%"></div>
+            </div>
+            <div class="col bg-warning">
+            </div>
         </div>
 
-        <div id="Que_es" class="tabcontent">
-            <ul>
-                <li>Host de repositorios GIT</li>
-                <li>Es un sistema de creación de repositorios y control de versiones.</li>
-                <li>Una red social enfocada al desarrollo de código</li>
-            </ul>
-        </div>
-        <div id="Que_es_Git" class="tabcontent">
-            <p>
-                Git es un sistema de control de versiones de código abierto y gratuito, diseñado para manejar desde proyectos pequeños a proyectos grandes.
-            </p>
-            <img src="./Imagenes/2.png" alt="Git" id="git_img">
-        </div>
-        <div id="HUB" class="tabcontent">
-            <img src="./Imagenes/hub.png" alt="Hub" id="img1">
-        </div>
-        <div id="Git_hub" class="tabcontent">
-            <img src="./Imagenes/web_git.png" alt="GitHub" id="img2">
-        </div>
-        <div id="Sirve" class="tabcontent">
-            <ul>
-                <li>Compartir cualquier tipo de código</li>
-                <li>Creación de Repositorios</li>
-                <li>Evolución del código</li>
-                <li>Comunicación entre desarrolladores</li>
-            </ul>
-        </div>
-        <div id="Repositorios" class="tabcontent">
-            <p>Es un espacio en la nube donde se almacenan archivos, proyectos y código.</p>
-            <div class="div_izq">
-                <h3>Público</h3>
-                <ul>
-                    <h4>Ventajas</h4>
-                    <li>Publicación gratuita.
-                    </li>
-                    <li>Acceso a código de terceros.
-                    </li>
-                </ul>
+
+    </header>
+    <section>
+        <ul class="nav nav-tabs  justify-content-center bg-dark" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link" id="que-tab" data-toggle="tab" href="#que" role="tab" aria-controls="que" aria-selected="false">
+                    <h3>¿Qué es?</h3>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="queg-tab" data-toggle="tab" href="#queg" role="tab" aria-controls="queg" aria-selected="false">
+                    <h3>¿Qué es Git?</h3>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="hub-tab" data-toggle="tab" href="#hub" role="tab" aria-controls="hub" aria-selected="false">
+                    <h3>HUB
+
+                    </h3>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="github-tab" data-toggle="tab" href="#github" role="tab" aria-controls="github" aria-selected="false">
+                    <h3>
+                        Git Hub
+                    </h3>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="paque-tab" data-toggle="tab" href="#paque" role="tab" aria-controls="paque" aria-selected="false">
+                    <h3>¿Para qué sirve?</h3>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="rep-tab" data-toggle="tab" href="#rep" role="tab" aria-controls="rep" aria-selected="false">
+                    <h3>Repositorios GitHub</h3>
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content bg-dark text-white" id="myTabContent">
+            <div class="tab-pane fade" id="que" role="tabpanel" aria-labelledby="que-tab">
+                <div class="row">
+                    <div class="col">
+                    </div>
+                    <div class="col-6">
+                        <ul class=" pt-5">
+                            <li>Host de repositorios GIT</li>
+                            <li>Es un sistema de creación de repositorios y control de versiones.</li>
+                            <li>Una red social enfocada al desarrollo de código</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                    </div>
+                </div>
             </div>
-            <div class="div_der">
-                <h3>Privado</h3>
-                <ul>
-                    <h4>Ventajas</h4>
-                    <li>Protección de derechos de autor e información confidencial.</li>
-                </ul>
+            <div class="tab-pane fade" id="queg" role="tabpanel" aria-labelledby="queg-tab">
+                <div class="row pt-5">
+                    <div class="col text-right pt-20">
+                        <img src="./Imagenes/2.png" alt="Git" id="git_img">
+                    </div>
+                    <div class="col-6">
+                        <p>
+                            Git es un sistema de control de versiones de código abierto y gratuito, diseñado para manejar desde proyectos pequeños a proyectos grandes.
+                        </p>
+                    </div>
+                    <div class="col">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="hub" role="tabpanel" aria-labelledby="hub-tab">
+                <div class="row pt-5">
+                    <div class="col pt-20">
+                    </div>
+                    <div class="col-6">
+                        <img src="./Imagenes/hub.png" alt="Hub" id="img1" height="100%" width="100%">
+                    </div>
+                    <div class="col">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="github" role="tabpanel" aria-labelledby="github-tab">
+                <div class="row pt-5">
+                    <div class="col pt-20">
+                    </div>
+                    <div class="col-6">
+                        <img src="./Imagenes/web_git.png" alt="GitHub" id="img2" class="img-circle" height="100%" width="100%">
+                    </div>
+                    <div class="col">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade " id="paque" role="tabpanel " aria-labelledby="paque-tab">
+                <div class="row pt-5">
+                    <div class="col pt-20">
+                    </div>
+                    <div class="col-6">
+                        <ul>
+                            <li>Compartir cualquier tipo de código</li>
+                            <li>Creación de Repositorios</li>
+                            <li>Evolución del código</li>
+                            <li>Comunicación entre desarrolladores</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="rep" role="tabpanel " aria-labelledby="rep-tab">
+                <div class="row pt-5">
+                    <div class="col pt-20">
+                    </div>
+                    <div class="col-6">
+                        <p>Es un espacio en la nube donde se almacenan archivos, proyectos y código.</p>
+                        <div class="row pt-3">
+                            <div class="col pt-20 border-left border-warning">
+                                <h3>Público</h3>
+                                <hr>
+                                <ul>
+                                    <h4>Ventajas</h4>
+                                    <li>Publicación gratuita.
+                                    </li>
+                                    <li>Acceso a código de terceros.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col border-left border-warning">
+                                <h3>Privado</h3>
+                                <hr>
+                                <ul>
+                                    <h4>Ventajas</h4>
+                                    <li>Protección de derechos de autor e información confidencial.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                    </div>
+                </div>
             </div>
         </div>
     </section>

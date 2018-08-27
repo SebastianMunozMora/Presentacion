@@ -1,107 +1,54 @@
 html {
-    background: url('../Imagenes/fondo.PNG') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    font-size: 1.2rem;
 }
 
-body {
-    font-family: Arial;
-    color: white;
+li {
+    font-size: 1.9rem;
 }
 
-
-/* Style the tab */
-
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #b32a2aa2;
-    margin-left: 80px;
-    margin-right: 300px;
+.nav-tabs>li>a.active {
+    color: black;
+    background-color: #ffc100 !important;
+    border-color: #ffc100 !important;
 }
 
 
-/* Style the buttons inside the tab */
+/* .nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus {
+    color: #555555;
+    cursor: default;
+    background-color: #dd1919 !important;
+    border: 1px solid #e90b0b;
+    border-bottom-color: transparent;
+} */
 
-.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 30px 30px;
-    transition: 0.3s;
-    font-size: 30px;
-    color: #000000;
+
+/* .nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus {
+    color: #555555 !important;
+    background-color: red !important;
+} */
+
+
+/* color letra */
+
+.nav-tabs>li>a {
+    color: #fdfdfd;
 }
 
-
-/* Change background color of buttons on hover */
-
-.tab button:hover {
-    background-color: #ddd;
+.nav-tabs>li>a:hover {
+    background-color: #ffc100 !important;
+    border: medium none;
+    border-radius: 0;
+    color: #525252;
 }
 
-
-/* Create an active/current tablink class */
-
-.tab button.active {
-    background-color: #ccc;
+.nav-tabs {
+    border-color: #333333;
 }
 
-
-/* Style the tab content */
-
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border-top: none;
-    height: 500px;
-    font-size: 30px;
-    margin-left: 80px;
-    margin-right: 300px;
-}
-
-header {
-    color: white;
-    text-align: center;
-}
-
-.class1,
-.class2 {
-    width: 50%;
-    float: left;
-    height: 65%;
-}
-
-.class1 {
-    font-size: 30px;
-}
-
-.class2 {
-    text-align: left;
-}
-
-#imagen {
-    width: 40%;
-}
-
-#git_img {
-    float: right;
-}
-
-#img1,
-#img2 {
-    width: 70%;
-    margin-left: 10%;
-    margin-top: 1%;
-}
-
-.div_izq,
-.div_der {
-    float: left;
-    width: 50%;
-    height: 65%;
+.col-6 {
+    font-size: 1.9rem;
 }
