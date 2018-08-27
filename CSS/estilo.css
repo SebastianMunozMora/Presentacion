@@ -98,8 +98,8 @@ header {
 }
 
 .div_izq,
-div_der {
-    width: 50%;
+.div_der {
     float: left;
+    width: 50%;
     height: 65%;
 }
